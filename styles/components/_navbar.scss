@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+        margin: 0 10px;
+        color: $color-primary;
+        padding: 8px 30px;
+        border-radius: 5px;
+        transition-duration: $transition-factor * 1s;
+
+        &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            border-radius: 1000px;
+        }
+
+        &:hover {
+            background-color: rgba($color-primary, 0.1);
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: $color-primary;
+    }
+}

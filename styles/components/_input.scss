@@ -1,0 +1,18 @@
+.input {
+    border: none;
+    border-bottom: 2px solid $color-secondary;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.1rem;
+    padding: 2px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary;
+
+        &::placeholder {
+            color: rgba($color-primary, 0.5);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.select {
+    border: none;
+    color: $color-secondary;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background: transparent;
+    transition-duration: $transition-factor * 1s;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: rgba($color-primary, 0.1);
+        color: $color-primary;
+        cursor: pointer;
+    }
+}

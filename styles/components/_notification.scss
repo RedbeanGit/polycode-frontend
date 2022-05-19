@@ -1,0 +1,107 @@
+.notification {
+    position: relative;
+    right: -100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: notification-slide 0.5s forwards;
+    display: flex;
+
+    &--info {
+        background-color: $color-background;
+    }
+
+    &--success {
+        background-color: $color-success;
+    }
+
+    &--warning {
+        background-color: $color-warning;
+    }
+
+    &--error {
+        background-color: $color-error;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+
+        &--info {
+            fill: $color-primary;
+        }
+
+        &--success {
+            fill: $color-background;
+        }
+
+        &--warning {
+            fill: $color-secondary;
+        }
+
+        &--error {
+            fill: $color-background;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+
+        &--info {
+            color: $color-primary;
+        }
+
+        &--sucess {
+            color: $color-background;
+        }
+
+        &--warning {
+            color: $color-secondary;
+        }
+
+        &--error {
+            color: $color-background;
+        }
+    }
+
+    &__message {
+        font-size: 1rem;
+        margin: 0;
+
+        &--info {
+            color: $color-secondary;
+        }
+
+        &--sucess {
+            color: $color-background;
+        }
+
+        &--warning {
+            color: $color-secondary;
+        }
+
+        &--error {
+            color: $color-background;
+        }
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+@keyframes notification-slide {
+    100% {
+        right: 0px;
+    }
+}

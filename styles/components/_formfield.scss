@@ -1,0 +1,20 @@
+.form-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    margin: 12px 0;
+
+    &__label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+        color: $color-secondary;
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        font-size: 1rem;
+        margin: 0;
+        color: rgba($color-secondary, 0.5);
+    }
+}
