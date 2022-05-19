@@ -1,0 +1,37 @@
+// 1. utils 
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/animations";
+@import "./utils/mixins";
+
+// 2. vendors
+// empty for now
+
+// 3. base
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/skeleton";
+@import "./base/widthcontainer";
+
+// 4. components
+@import "./components/button";
+@import "./components/card";
+@import "./components/form";
+@import "./components/formfield";
+@import "./components/input";
+@import "./components/navbar";
+@import "./components/notification";
+@import "./components/select";
+@import "./components/title";
+
+// 5. layouts
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/notification-drawer";
+@import "./layouts/preview-grid";
+@import "./layouts/preview-set";
+@import "./layouts/verify-screen";
+
+// 6. pages
+@import "./pages/editor";
