@@ -1,0 +1,45 @@
+.editor {
+    min-height: calc(100vh - 70px);
+    margin: 10px 0 50px;
+    display: flex;
+
+    &__statement {
+        width: 50%;
+        min-height: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        min-height: calc(100vh - 132px);
+        border-right: 1px solid rgba($color-secondary, 0.2);
+    }
+
+    &__ide {
+        width: 50%;
+        min-height: 100%;
+        box-sizing: border-box;
+        min-height: calc(100vh - 132px);
+    }
+
+    &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    &__editor {
+        height: calc(100vh - 352px);
+    }
+
+    &__console {
+        height: 200px;
+        border-top: 1px solid rgba($color-secondary, 0.2);
+        margin-bottom: 60px;
+    }
+
+    &__console-title {
+        padding: 0 25px;
+        font-size: 1rem;
+        color: $color-secondary;
+    }
+}
