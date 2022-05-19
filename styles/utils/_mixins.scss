@@ -1,0 +1,34 @@
+@mixin fade-top-bottom($offset, $blur-radius, $spread-radius) {
+    position: relative;
+    display: inline-block;
+    color: white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+        box-shadow: inset 0 (-$offset) $blur-radius (
+            -$spread-radius
+        );
+}
+}
+
+@mixin water-drop-effect() {
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: --positionX;
+        left: --positionY;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        animation: water-drop-expand 0.5s;
+    }
+}
