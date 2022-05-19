@@ -1,0 +1,54 @@
+.hero {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to right, rgba(#fff, 0.2) 0%, rgba(#fff, 1) 70%);
+
+    &:not(.hero--loading) {
+        background-size: cover;
+    }
+
+    &--loading {
+        height: 60vh;
+        mask-image: none;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: #000;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $color-background;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: rgba($color-background, 0.8);
+        margin: 10px 0 0 5px;
+    }
+
+    &__button {
+        margin-top: 40px;
+
+        &:hover {
+            border-color: $color-background;
+            color: $color-background;
+            background-color: transparent;
+        }
+    }
+}

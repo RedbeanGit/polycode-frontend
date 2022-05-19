@@ -1,0 +1,33 @@
+.preview-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 70px 0;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 50px;
+    }
+
+    &__content {
+        display: grid;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-gap: 1rem;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        color: $color-secondary;
+        margin: 0;
+    }
+}

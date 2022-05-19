@@ -1,0 +1,18 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $color-primary;
+    color: $color-background;
+    padding: 20px;
+
+    .title__text {
+        color: $color-background;
+    }
+
+    .title__image {
+        background-color: $color-background;
+        border-radius: 1000px;
+    }
+}
