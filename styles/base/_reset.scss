@@ -1,0 +1,27 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  >*:last-child {
+    padding-bottom: 50px;
+  }
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
